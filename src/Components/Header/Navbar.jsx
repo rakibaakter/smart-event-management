@@ -40,7 +40,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl">
-          <div>
+          <div className="text-gray-400">
             <h2 className="font-bold">
               <span className=" text-2xl font-normal text-orange-400">S</span>
               mart

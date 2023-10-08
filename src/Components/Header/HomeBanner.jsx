@@ -7,7 +7,7 @@ const HomeBanner = () => {
         backgroundImage: `url(${banner})`,
       }}
     >
-      <div className="hero-overlay bg-opacity-90"></div>
+      <div className="hero-overlay bg-opacity-80"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold text-orange-400 first-letter:text-7xl">
@@ -19,7 +19,9 @@ const HomeBanner = () => {
             and a commitment to excellence, we take care of every detail, from
             concept to execution..
           </p>
-          <button className="btn bg-orange-400">Get Started</button>
+          <button className="btn bg-orange-400 text-white hover:text-gray-600">
+            Get Started
+          </button>
         </div>
       </div>
     </div>
