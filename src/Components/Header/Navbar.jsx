@@ -23,8 +23,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="fixed navbar bg-transparent">
-      <div className="navbar-start  lg:w-1/3">
+    <div className="sticky top-0 navbar bg-white z-100 px-2 md:px-10 lg:px-24">
+      <div className="navbar-start ">
         <div className="dropdown">
           <label
             tabIndex={0}
@@ -55,7 +55,7 @@ const Navbar = () => {
           {NavLinks}
         </ul>
       </div>
-      <div className="navbar-end lg:w-1/3">
+      <div className="navbar-end">
         <a className="btn">Button</a>
       </div>
     </div>
