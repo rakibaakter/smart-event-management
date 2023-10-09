@@ -19,7 +19,7 @@ const sponserArray = [
 
 const Sponsers = () => {
   return (
-    <div className=" text-center my-20 px-2 md:px-10 lg:px-28">
+    <div className=" text-center my-32 px-2 md:px-10 lg:px-28">
       <h2 className="text-3xl font-bold text-gray-400 border-b-orange-400 my-6">
         Our Sponsers
       </h2>

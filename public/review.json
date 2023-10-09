@@ -5,14 +5,14 @@
       "name": "John Doe",
       "position": "CEO, Company A",
       "comment": "Our recent corporate event organized by Your Event Management Company was nothing short of spectacular. The attention to detail, seamless execution, and creative touch left our attendees impressed and engaged throughout. We can't wait to work with you again for our next big event!",
-      "rating": 5,
+      "rating": 4.6,
       "profile": "https://i.ibb.co/Ph0zDbv/client1.jpg"
     },
     {
       "id": 2,
       "name": "Jane Smith",
       "position": "Marketing Manager, Company B",
-      "comment": "The team at Your Event Management Company consistently delivers excellence. Our trade show booth was a standout, attracting more visitors than ever before. The meticulous planning and flawless execution made all the difference. Thank you for making us shine!",
+      "comment": "The team at the Company consistently delivers excellence. Our trade show booth was a standout, attracting more visitors than ever before. The meticulous planning and flawless execution made all the difference. Thank you for making us shine!",
       "rating": 4.5,
       "profile": "https://i.ibb.co/Ph0zDbv/client1.jpg"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "name": "Alice Johnson",
       "position": "CTO, Company C",
-      "comment": "We've been partnering with Your Event Management Company for several years now, and they never disappoint. Their team-building workshops have had a profound impact on our employees' collaboration and productivity. It's always a pleasure working with such dedicated professionals.",
+      "comment": "We've been partnering with the Company for several years now, and they never disappoint. Their team-building workshops have had a profound impact on our employees' collaboration and productivity. It's always a pleasure working with such dedicated professionals.",
       "rating": 5,
       "profile": "https://i.ibb.co/Ph0zDbv/client1.jpg"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "name": "Bob Williams",
       "position": "COO, Company D",
-      "comment": "Our product launch event was a tremendous success, all thanks to Your Event Management Company. From conceptualization to execution, their team was outstanding. Our guests were left impressed by the immersive experience you created.",
+      "comment": "Our product launch event was a tremendous success, all thanks to the Company. From conceptualization to execution, their team was outstanding. Our guests were left impressed by the immersive experience you created.",
       "rating": 4.8,
       "profile": "https://i.ibb.co/Ph0zDbv/client1.jpg"
     }

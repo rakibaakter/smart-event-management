@@ -1,26 +1,31 @@
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Rating from "react-rating";
 
 const Review = ({ review }) => {
-  const { profile } = review;
+  const { profile, name, position, rating, comment } = review;
 
   return (
-    <div className="testimonial px-24 p-10 text-white">
-      <div className="flex items-center">
+    <div className="testimonial px-2 md:px-24 py-6 text-white">
+      <div className="flex items-center my-3">
         <img
-          className="h-40 w-40 rounded-full mr-10"
-          src={review.profile}
-          alt={review.name}
+          className=" h-20 w-20 md:h-32 md:w-32 lg:h-40 lg:w-40 rounded-full "
+          src={profile}
+          alt={name}
         />
-        <div className="text-left">
-          <h3 className="text-3xl font-semibold">{review.name}</h3>
-          <p className="font-medium ">{review.position}</p>
+        <div className="text-left ml-4">
+          <h3 className="md:text-3xl font-semibold">{name}</h3>
+          <p className="font-medium ">{position}</p>
           <div className="rating text-orange-400 font-bold text-2xl">
-            <AiFillStar></AiFillStar>
-            {review.rating} / 5
+            <Rating
+              initialRating={rating}
+              readonly
+              emptySymbol={<AiOutlineStar />}
+              fullSymbol={<AiFillStar />}
+            />
           </div>
         </div>
       </div>
-      <p>{review.comment}</p>
+      <p className="my-3">{comment}</p>
     </div>
   );
 };
