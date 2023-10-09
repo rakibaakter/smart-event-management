@@ -25,18 +25,23 @@ const AuthProvider = ({ children }) => {
       .then((res) => res.json())
       .then((data) => setHistoryInfo(data));
 
+    // load services  data
+    fetch("/services.json")
+      .then((res) => res.json())
+      .then((data) => setServices(data.services));
+
     // load review  data
     fetch("/review.json")
       .then((res) => res.json())
       .then((data) => setReview(data.testimonials));
   }, []);
 
-  // useEffect(() => {
-  //   // load services  data
-  //   fetch("/services.json")
-  //     .then((res) => res.json())
-  //     .then((data) => setServices(data.services));
-  // }, []);
+  useEffect(() => {
+    // load services  data
+    fetch("/services.json")
+      .then((res) => res.json())
+      .then((data) => setServices(data.services));
+  }, []);
 
   const createUserByEmail = (email, password) => {
     setLoading(true);

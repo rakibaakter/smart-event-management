@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import connection from "../assets/connection.jpg";
 import useAuthInfoHooks from "../Hooks/useAuthInfoHooks";
 import { AiFillGoogleCircle } from "react-icons/ai";
@@ -18,6 +18,8 @@ const Login = () => {
       })
       .catch((error) => console.log(error));
   };
+
+  const prePath = useLocation();
 
   return (
     <div

@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import useAuthInfoHooks from "../../Hooks/useAuthInfoHooks";
+import Logo from "../Logo";
 
 const Navbar = () => {
   const { user, logOut } = useAuthInfoHooks();
@@ -44,14 +45,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl">
-          <div className="text-gray-400">
-            <h2 className="font-bold">
-              <span className=" text-2xl font-normal text-orange-400">S</span>
-              mart
-              <span className=" text-4xl font-normal text-orange-400">E</span>
-              vent
-            </h2>
-          </div>
+          <Logo />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">

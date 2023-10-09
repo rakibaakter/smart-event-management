@@ -1,11 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import useAuthInfoHooks from "../Hooks/useAuthInfoHooks";
 
 const ServiceDetail = () => {
   const { id } = useParams();
   console.log(id);
   //   const { selectedService, setSelectedService } = useState({});
-  const { services } = useLoaderData();
+  const { services } = useAuthInfoHooks();
   console.log(services);
 
   const selectedService = services?.find((service) => service?.id == id);
