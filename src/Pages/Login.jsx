@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import connection from "../assets/connection.jpg";
 import useAuthInfoHooks from "../Hooks/useAuthInfoHooks";
+import { AiFillGoogleCircle } from "react-icons/ai";
 
 const Login = () => {
-  const { logInbyEmail } = useAuthInfoHooks();
+  const { logInbyEmail, signInByGoogle } = useAuthInfoHooks();
 
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -67,6 +68,15 @@ const Login = () => {
                   </button>
                 </div>
               </form>
+              <div>
+                <p>Or</p>
+                <div className="flex justify-center gap-2 items-center mb-10">
+                  <span>Sign in with</span>
+                  <button onClick={signInByGoogle}>
+                    <AiFillGoogleCircle className="text-2xl text-orange-400 " />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
