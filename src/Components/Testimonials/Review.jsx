@@ -1,5 +1,8 @@
+import { AiFillStar } from "react-icons/ai";
+
 const Review = ({ review }) => {
   const { profile } = review;
+
   return (
     <div className="testimonial px-24 p-10 text-white">
       <div className="flex items-center">
@@ -12,6 +15,7 @@ const Review = ({ review }) => {
           <h3 className="text-3xl font-semibold">{review.name}</h3>
           <p className="font-medium ">{review.position}</p>
           <div className="rating text-orange-400 font-bold text-2xl">
+            <AiFillStar></AiFillStar>
             {review.rating} / 5
           </div>
         </div>

@@ -2,6 +2,7 @@ import HomeBanner from "../Components/Header/HomeBanner";
 import History from "../Components/About/History";
 import ServiceContainer from "../Components/Services/ServiceCOntainer";
 import TestimonialSlider from "../Components/Testimonials/TestimonialSlider";
+import Sponsers from "../Components/Sponsers/Sponsers";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <History />
       <ServiceContainer />
       <TestimonialSlider />
+      <Sponsers />
     </div>
   );
 };
