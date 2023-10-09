@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Header/Navbar";
 import Sticky from "react-stickynode";
+import FooterContainer from "../Components/Footer/FooterContainer";
 
 const Root = () => {
   return (
@@ -10,6 +11,7 @@ const Root = () => {
       </Sticky>
       ;
       <Outlet />
+      <FooterContainer />
     </div>
   );
 };

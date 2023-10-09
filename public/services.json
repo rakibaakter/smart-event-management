@@ -5,6 +5,7 @@
       "service_name": "Conferences and Seminars",
       "description": "Our expert team specializes in crafting and executing seamless conferences and seminars that leave a lasting impression on your attendees. Whether you're hosting a small seminar or a large-scale conference, we have the experience and creativity to make it a resounding success.",
       "events_managed": 25,
+      "price": "$5000 - $10000",
       "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
     },
     {
@@ -12,6 +13,7 @@
       "service_name": "Trade Shows and Expos",
       "description": "Trade shows and expos provide a valuable platform for businesses to showcase their products and services to a wide and engaged audience. Our event management team specializes in creating unforgettable trade show and expo experiences that will set your brand apart from the competition.",
       "events_managed": 20,
+      "price": "$7000 - $12000",
       "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
     },
     {
@@ -19,6 +21,7 @@
       "service_name": "Team Building Workshops",
       "description": "Teamwork is the cornerstone of any successful organization, and our team building workshops are designed to strengthen the bonds among your employees while enhancing their collaborative skills.",
       "events_managed": 15,
+      "price": "$3000 - $6000",
       "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
     },
     {
@@ -26,6 +29,7 @@
       "service_name": "Product Launches",
       "description": "Launching a new product is a pivotal moment for your business, and it deserves a memorable and impactful event to introduce it to the world. Our event management team specializes in crafting unforgettable product launch experiences that generate buzz, excitement, and media attention.",
       "events_managed": 30,
+      "price": "$8000 - $15000",
       "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
     },
     {
@@ -33,6 +37,7 @@
       "service_name": "Corporate Meetings",
       "description": "Corporate meetings are a vital part of your organization's success, and our event management team is here to ensure that they run smoothly and effectively.",
       "events_managed": 12,
+      "price": "$2500 - $5000",
       "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
     },
     {
@@ -40,6 +45,7 @@
       "service_name": "Award Ceremonies",
       "description": "Honor excellence and celebrate achievements with our expertly coordinated award ceremonies. Whether you're recognizing outstanding employees, industry leaders, or partners, our event management team is dedicated to creating a memorable and prestigious event that highlights the accomplishments of your honorees.",
       "events_managed": 28,
+      "price": "$6000 - $12000",
       "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
     }
   ]

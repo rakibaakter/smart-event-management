@@ -13,7 +13,7 @@ const TestimonialSlider = () => {
         Happy Clients
       </h2>
       <p className="mb-4 text-2xl text-orange-400">
-        We're constantly trying to express ourselves and actualize our dreams.
+        We are constantly trying to express ourselves and actualize our dreams.
         <br />
         If you have the opportunity to play.
       </p>

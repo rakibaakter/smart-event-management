@@ -7,7 +7,7 @@ const History = () => {
   // console.log(historyInfo);
 
   return (
-    <div className="bg-white w-11/12 lg:w-4/5 mx-auto grid grid-cols-2 md:grid-cols-4 gap-1 ">
+    <div className="bg-transparent grid grid-cols-2 md:grid-cols-4 gap-6 ">
       {Object.keys(historyInfo).map((key, index) => (
         <div className="text-center md:py-6">
           <div className={`${index === 0 ? "" : "border-l border-orange-400"}`}>

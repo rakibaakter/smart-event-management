@@ -1,5 +1,6 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import Rating from "react-rating";
+import PropTypes from "prop-types";
 
 const Review = ({ review }) => {
   const { profile, name, position, rating, comment } = review;
@@ -31,3 +32,7 @@ const Review = ({ review }) => {
 };
 
 export default Review;
+
+Review.propTypes = {
+  review: PropTypes.object,
+};
