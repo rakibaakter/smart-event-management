@@ -4,7 +4,7 @@ import useAuthInfoHooks from "../../Hooks/useAuthInfoHooks";
 const History = () => {
   const { historyInfo } = useAuthInfoHooks();
 
-  console.log(historyInfo);
+  // console.log(historyInfo);
 
   return (
     <div className="bg-white w-11/12 lg:w-4/5 mx-auto grid grid-cols-2 md:grid-cols-4 gap-1 ">
