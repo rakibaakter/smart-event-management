@@ -1,14 +1,11 @@
+import { useLoaderData } from "react-router-dom";
 import Service from "./Service";
-import ServiceList from "./ServiceList";
-import useAuthInfoHooks from "../../Hooks/useAuthInfoHooks";
+// import ServiceList from "./ServiceList";
+// import useAuthInfoHooks from "../../Hooks/useAuthInfoHooks";
 // import schedule from "../../assets/schedule.jpg";
 
 const ServiceContainer = () => {
-  //   const services = useLoaderData().services;
-  //   setServices = data.services;
-
-  const { services } = useAuthInfoHooks();
-  //   console.log(services);
+  const { services } = useLoaderData();
 
   return (
     <div className="my-32 text-center px-2 md:px-10 lg:px-28">

@@ -17,6 +17,7 @@ const AuthProvider = ({ children }) => {
   const [services, setServices] = useState([]);
   const [reviews, setReview] = useState([]);
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // load history  data
@@ -24,38 +25,45 @@ const AuthProvider = ({ children }) => {
       .then((res) => res.json())
       .then((data) => setHistoryInfo(data));
 
-    // load services  data
-    fetch("/services.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data.services));
-
     // load review  data
     fetch("/review.json")
       .then((res) => res.json())
       .then((data) => setReview(data.testimonials));
   }, []);
 
+  // useEffect(() => {
+  //   // load services  data
+  //   fetch("/services.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setServices(data.services));
+  // }, []);
+
   const createUserByEmail = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const signInByGoogle = () => {
+    setLoading(true);
     const googleProvider = new GoogleAuthProvider();
 
     return signInWithPopup(auth, googleProvider);
   };
 
   const logInbyEmail = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
+    setLoading(true);
     return signOut(auth);
   };
 
   // set user in auth state change
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setLoading(false);
       setUser(currentUser);
     });
     return () => {
@@ -68,6 +76,7 @@ const AuthProvider = ({ children }) => {
     services,
     reviews,
     user,
+    loading,
     createUserByEmail,
     signInByGoogle,
     logInbyEmail,
