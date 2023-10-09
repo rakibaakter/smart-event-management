@@ -5,7 +5,7 @@ import Review from "./review";
 
 const TestimonialSlider = () => {
   const { reviews } = useAuthInfoHooks();
-  console.log(reviews);
+  // console.log(reviews);
 
   return (
     <div className=" text-center my-32 px-2 md:px-10 lg:px-28">

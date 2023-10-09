@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import useAuthInfoHooks from "../../Hooks/useAuthInfoHooks";
 
 const Navbar = () => {
+  const { user, logOut } = useAuthInfoHooks();
+  console.log(user);
+
   const NavLinks = (
     <>
       <li>
@@ -23,7 +27,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-white px-2 md:px-10 lg:px-24">
+    <div className="navbar px-2 md:px-10 lg:px-24">
       <div className="navbar-start ">
         <div className="dropdown">
           <label
@@ -56,9 +60,15 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/login">
-          <a className="text-orange-400 font-semibold text-xl">Log In</a>
-        </Link>
+        {user ? (
+          <Link onClick={logOut}>
+            <a className="text-orange-400 font-semibold text-xl">Sign Out</a>
+          </Link>
+        ) : (
+          <Link to="/login">
+            <a className="text-orange-400 font-semibold text-xl">Log In</a>
+          </Link>
+        )}
       </div>
     </div>
   );

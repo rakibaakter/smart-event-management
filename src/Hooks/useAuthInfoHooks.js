@@ -3,7 +3,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 
 const useAuthInfoHooks = () => {
   const allInfo = useContext(AuthContext);
-  console.log(allInfo);
+  // console.log(allInfo);
 
   return allInfo;
 };
