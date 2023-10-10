@@ -12,7 +12,7 @@ const TestimonialSlider = () => {
       <h2 className="text-3xl font-bold text-gray-400 border-b-orange-400 my-6">
         Happy Clients
       </h2>
-      <p className="mb-4 text-2xl text-orange-400">
+      <p className="mb-4 text-xl text-orange-400">
         We are constantly trying to express ourselves and actualize our dreams.
         <br />
         If you have the opportunity to play.

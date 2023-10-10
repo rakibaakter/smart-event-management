@@ -8,7 +8,7 @@
       "price": "$5000 - $10000",
       "team_members": 5,
       "host_name": "John Doe",
-      "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
+      "image_url": "https://i.ibb.co/4YyDjbj/img1.jpg"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "price": "$7000 - $12000",
       "team_members": 8,
       "host_name": "Jane Smith",
-      "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
+      "image_url": "https://i.ibb.co/Qp9Pmkf/img2.jpg"
     },
     {
       "id": 3,
@@ -38,7 +38,7 @@
       "price": "$8000 - $15000",
       "team_members": 6,
       "host_name": "Bob Williams",
-      "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
+      "image_url": "https://i.ibb.co/b7BxTYH/img3.jpg"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "price": "$2500 - $5000",
       "team_members": 3,
       "host_name": "Eva Davis",
-      "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
+      "image_url": "https://i.ibb.co/XDb78fz/img4.jpg"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "price": "$6000 - $12000",
       "team_members": 7,
       "host_name": "Michael Wilson",
-      "image_url": "https://i.ibb.co/HK1Dk7N/demo2.jpg"
+      "image_url": "https://i.ibb.co/ZYSTHn3/img5.jpg"
     }
   ]
 }
