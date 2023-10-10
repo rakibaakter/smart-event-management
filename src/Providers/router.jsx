@@ -7,6 +7,7 @@ import ServiceDetail from "../Pages/ServiceDetail";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage";
 import Schedule from "../Pages/Schedule";
+import Blogs from "../Pages/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,15 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/schedule.json"),
+      },
+      {
+        path: "/blog",
+        element: (
+          <PrivateRoute>
+            <Blogs />
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/blogs.json"),
       },
     ],
   },
