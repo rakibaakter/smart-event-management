@@ -1,0 +1,44 @@
+{
+  "schedule": [
+    {
+      "id": 1,
+      "name": "Annual Conference 2023",
+      "date": "2023-10-20",
+      "location": "Convention Center A",
+      "time": "9:00 AM - 5:00 PM",
+      "company_name": "Global Business Summit, Inc."
+    },
+    {
+      "id": 2,
+      "name": "Product Expo",
+      "date": "2023-11-05",
+      "location": "Exhibition Hall B",
+      "time": "10:00 AM - 6:00 PM",
+      "company_name": "Tech Innovations Expo, LLC"
+    },
+    {
+      "id": 3,
+      "name": "Team Building Workshop",
+      "date": "2023-11-15",
+      "location": "Team Building Center",
+      "time": "2:00 PM - 5:00 PM",
+      "company_name": "Synergy Events & Training"
+    },
+    {
+      "id": 4,
+      "name": "Product Launch Event",
+      "date": "2023-12-10",
+      "location": "Grand Ballroom",
+      "time": "6:00 PM - 10:00 PM",
+      "company_name": "InnovateTech Product Launches, Inc."
+    },
+    {
+      "id": 5,
+      "name": "Corporate Meeting",
+      "date": "2024-01-15",
+      "location": "Conference Room C",
+      "time": "10:00 AM - 1:00 PM",
+      "company_name": "Corporate Success Strategies, LLC"
+    }
+  ]
+}

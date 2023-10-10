@@ -20,6 +20,14 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to="/schedule"
+          className={({ isActive }) => (isActive ? "text-orange-400" : "")}
+        >
+          Schedule
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/blog"
           className={({ isActive }) => (isActive ? "text-orange-400" : "")}
         >
