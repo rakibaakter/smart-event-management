@@ -16,5 +16,3 @@ Corporate Event Management
 4. **Toggle Show Hide Password**: It implements the show and hide password.
 
 5. **Toggle in Login and Register**: It has toggle feature.
-
-## Installation
