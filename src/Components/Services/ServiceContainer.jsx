@@ -1,15 +1,11 @@
 import Service from "./Service";
 import useAuthInfoHooks from "../../Hooks/useAuthInfoHooks";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 const ServiceContainer = () => {
   const { services } = useAuthInfoHooks();
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <div className="my-32 text-center px-2 md:px-10 lg:px-28">
@@ -22,12 +18,7 @@ const ServiceContainer = () => {
 
       <div className="grid lg:grid-cols-2 gap-6 flex-1">
         {services.map((service) => (
-          <div
-            key={service.id}
-            data-aos="fade-up"
-            data-aos-md="fade-left"
-            data-aos-sm="fade-up"
-          >
+          <div key={service.id}>
             <Service service={service} />
           </div>
         ))}
