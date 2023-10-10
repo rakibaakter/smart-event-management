@@ -50,7 +50,7 @@ D: 3
 
 **Ans B**: here name has no default value, and function has called with no parameter.
 
-4. let count = 0;
+5. let count = 0;
    const nums = [0, 1, 2, 3];
 
    nums.forEach((num) => {
