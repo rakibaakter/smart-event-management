@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Service = ({ service }) => {
   const { service_name, events_managed, image_url, price, id, description } =
     service;
+
+  AOS.init();
+
   return (
-    <div className=" flex flex-col md:flex-row text-left bg-slate-200 shadow-xl gap-3">
+    <div
+      data-aos="fade-up"
+      className=" flex flex-col md:flex-row text-left bg-slate-200 shadow-xl gap-3"
+    >
       <figure className="md:w-2/3">
         <img className="w-full h-full" src={image_url} alt="" />
       </figure>

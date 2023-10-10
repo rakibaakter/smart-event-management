@@ -1,5 +1,3 @@
-import React from "react";
-
 const Blog = ({ blog }) => {
   const { title, author, date, content, tags } = blog;
   return (

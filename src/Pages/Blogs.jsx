@@ -1,4 +1,3 @@
-import AwesomeSlider from "react-awesome-slider";
 import { useLoaderData } from "react-router-dom";
 import Blog from "../Components/blog";
 
