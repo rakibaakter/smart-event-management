@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import regiser from "../assets/register.jpg";
 import useAuthInfoHooks from "../Hooks/useAuthInfoHooks";
 import { ToastContainer, toast } from "react-toastify";
@@ -10,6 +10,8 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Register = () => {
   const { createUserByEmail } = useAuthInfoHooks();
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -47,6 +49,9 @@ const Register = () => {
         toast.success("Registration succeed !", {
           position: toast.POSITION.BOTTOM_CENTER,
         });
+
+        // navigate after login
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         toast.error(error.message, {
