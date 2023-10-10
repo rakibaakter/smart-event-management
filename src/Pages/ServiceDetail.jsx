@@ -22,8 +22,15 @@ const ServiceDetail = () => {
   //     setSelectedService(selectedItem);
   //   }, [id, services, setSelectedService])
 
-  const { service_name, events_managed, image_url, price, description } =
-    selectedService;
+  const {
+    service_name,
+    events_managed,
+    image_url,
+    price,
+    description,
+    team_members,
+    host_name,
+  } = selectedService;
 
   return (
     <div className="px-4 md:px-10 lg:px-28 my-20">
@@ -36,6 +43,14 @@ const ServiceDetail = () => {
             Managed Event - {events_managed}
           </h3>
           <p className="font-bold text-orange-400">Price : {price}</p>
+          <p>Team Member : {team_members}</p>
+          <p>
+            Event Hosted by
+            <span className="font-bold text-orange-400 text-xl">
+              {" "}
+              {host_name}
+            </span>
+          </p>
           <p className=" lg:w-4/5">{description}</p>
           <button className="w-1/2 btn bg-orange-400 text-white hover:text-gray-600">
             Booking Now

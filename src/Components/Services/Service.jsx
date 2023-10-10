@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
-  const { service_name, events_managed, image_url, price, id } = service;
+  const { service_name, events_managed, image_url, price, id, description } =
+    service;
   return (
     <div className="card bg-base-100 shadow-xl text-left">
       <figure>
@@ -12,11 +13,14 @@ const Service = ({ service }) => {
           {service_name}
           {/* <div className="badge bg-orange-400">{events_managed}</div> */}
         </h2>
-        <h4>Price : {price}</h4>
+        <h4 className="text-gray-400 font-bold">Price : {price}</h4>
+        <p>
+          {description.length > 105 ? description.slice(0, 105) : description}
+        </p>
         <div className="card-actions ">
           <Link to={`/services/${id}`}>
             <button className="btn bg-orange-400 text-white hover:text-gray-600">
-              View Details
+              Read More
             </button>
           </Link>
         </div>
