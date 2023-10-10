@@ -1,8 +1,20 @@
-# React + Vite
+# Smart Event
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+https://corporate-event-manageme-22150.web.app
+Corporate Event Management
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+1. **Resigter**: In this website , user can create account.
+
+2. **Log In**: User can log in by email password, or sign in by google
+
+3. **Private Route**: It has two private route, Blog, and Schedule.
+
+4. **Toggle Show Hide Password**: It implements the show and hide password.
+
+5. **Toggle in Login and Register**: It has toggle feature.
+
+## Installation
