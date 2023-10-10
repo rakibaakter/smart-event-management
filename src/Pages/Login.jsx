@@ -2,13 +2,16 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import connection from "../assets/connection.jpg";
 import useAuthInfoHooks from "../Hooks/useAuthInfoHooks";
 import { AiFillGoogleCircle } from "react-icons/ai";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
 
 const Login = () => {
   const { logInbyEmail, signInByGoogle } = useAuthInfoHooks();
   const navigate = useNavigate();
   const location = useLocation();
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -19,7 +22,7 @@ const Login = () => {
     logInbyEmail(email, password)
       .then((res) => {
         console.log(res.user);
-        toast.success("Registration succeed !", {
+        toast.success("logged in successfully !", {
           position: toast.POSITION.BOTTOM_CENTER,
         });
 
@@ -31,6 +34,11 @@ const Login = () => {
           position: toast.POSITION.BOTTOM_CENTER,
         });
       });
+  };
+
+  const handleSignInByGoogle = () => {
+    signInByGoogle();
+    navigate(location?.state ? location.state : "/");
   };
 
   return (
@@ -58,24 +66,30 @@ const Login = () => {
                     required
                   />
                 </div>
-                <div className="form-control">
+                <div className="form-control mt-6 relative h-11 w-full min-w-[200px]">
                   <input
-                    type="password"
-                    placeholder="password"
+                    type={showPassword ? "text" : "password"}
+                    placeholder=" password"
                     name="password"
-                    className="input input-bordered "
                     required
+                    className=" h-full w-full rounded-md border px-3 py-3 "
                   />
-                  <label className="label mt-3 text-white ">
-                    Do not have any account?
-                    <Link
-                      to="/register"
-                      className="text-blue-600 font-semibold hover:underline"
-                    >
-                      Create Account
-                    </Link>
-                  </label>
+                  <span
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute top-1/3 right-3 text-xl"
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
                 </div>
+                <label className="label mt-3 text-white ">
+                  Do not have any account?
+                  <Link
+                    to="/register"
+                    className="text-blue-600 font-semibold hover:underline"
+                  >
+                    Create Account
+                  </Link>
+                </label>
                 <div className="form-control mt-6">
                   <button className="btn bg-orange-400 text-white hover:text-gray-600">
                     Login
@@ -86,7 +100,7 @@ const Login = () => {
                 <p>Or</p>
                 <div className="flex justify-center gap-2 items-center mb-10">
                   <span>Sign in with</span>
-                  <button onClick={signInByGoogle}>
+                  <button onClick={handleSignInByGoogle}>
                     <AiFillGoogleCircle className="text-2xl text-orange-400 " />
                   </button>
                 </div>

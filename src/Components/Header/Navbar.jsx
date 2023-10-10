@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import useAuthInfoHooks from "../../Hooks/useAuthInfoHooks";
 import Logo from "../Logo";
+import profile from "../../assets/profile.jpg";
 
 const Navbar = () => {
   const { user, logOut } = useAuthInfoHooks();
@@ -55,9 +56,19 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <Link onClick={logOut}>
-            <a className="text-orange-400 font-semibold text-xl">Sign Out</a>
-          </Link>
+          <div className="flex gap-3 items-center">
+            <span className="flex gap-3 items-center">
+              <img
+                className="h-10 w-10 rounded-full"
+                src={user.photoURL ? user.photoURL : profile}
+                alt=""
+              />
+              <span>{user.displayName}</span>
+            </span>
+            <Link onClick={logOut}>
+              <a className="text-orange-400 font-semibold text-xl">Sign Out</a>
+            </Link>
+          </div>
         ) : (
           <Link to="/login">
             <a className="text-orange-400 font-semibold text-xl">Log In</a>
