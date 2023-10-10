@@ -26,20 +26,22 @@ const ServiceDetail = () => {
     selectedService;
 
   return (
-    <div className="px-2 md:px-10 lg:px-28 my-20">
-      <div className="flex justify-between items-center">
-        <div className="space-y-6 w-1/2">
-          <h2 className=" text-3xl font-bold ">{service_name}</h2>
-          <h3 className="font-semibold text-gray-400 text-4xl">
+    <div className="px-4 md:px-10 lg:px-28 my-20">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+        <div className="space-y-6 lg:w-1/2">
+          <h2 className="text-xl md:text-2xl font-bold mt-2 ">
+            {service_name}
+          </h2>
+          <h3 className="font-semibold text-gray-400 md:text-3xl">
             Managed Event - {events_managed}
           </h3>
           <p className="font-bold text-orange-400">Price : {price}</p>
-          <p className="w-4/5">{description}</p>
+          <p className=" lg:w-4/5">{description}</p>
           <button className="w-1/2 btn bg-orange-400 text-white hover:text-gray-600">
             Booking Now
           </button>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <img src={image_url} alt="" />
         </div>
       </div>

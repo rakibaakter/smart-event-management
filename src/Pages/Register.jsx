@@ -30,7 +30,7 @@ const Register = () => {
         <div className="hero-overlay bg-opacity-90 "></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="hero min-h-screen ">
-            <div className="hero-content flex-col">
+            <div className="hero-content flex-col p-0">
               <div className="text-center">
                 <h1 className="text-3xl font-bold">Register now!</h1>
               </div>
@@ -48,7 +48,7 @@ const Register = () => {
                       required
                     />
                   </div>
-                  <div className="form-control mt-6">
+                  <div className="form-control">
                     <input
                       type="email"
                       placeholder="email"

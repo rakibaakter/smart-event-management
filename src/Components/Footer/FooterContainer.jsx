@@ -1,5 +1,5 @@
-import Footer from "rc-footer";
-import "rc-footer/assets/index.css";
+// import Footer from "rc-footer";
+// import "rc-footer/assets/index.css";
 import Logo from "../Logo";
 import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 import ServiceList from "../Services/ServiceList";

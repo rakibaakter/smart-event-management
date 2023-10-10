@@ -31,11 +31,11 @@ const Login = () => {
       <div className="hero-overlay bg-opacity-90"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="hero min-h-screen ">
-          <div className="hero-content flex-col">
+          <div className="hero-content flex-col p-0">
             <div className="text-center">
               <h1 className="text-3xl font-bold">Please Login Here!</h1>
             </div>
-            <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-transparent">
+            <div className="card flex-shrink-0 shadow-2xl bg-transparent">
               <form onSubmit={handleLogIn} className="card-body text-black">
                 <div className="form-control mt-6">
                   <input
