@@ -1,10 +1,14 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import connection from "../assets/connection.jpg";
 import useAuthInfoHooks from "../Hooks/useAuthInfoHooks";
 import { AiFillGoogleCircle } from "react-icons/ai";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { logInbyEmail, signInByGoogle } = useAuthInfoHooks();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -15,11 +19,19 @@ const Login = () => {
     logInbyEmail(email, password)
       .then((res) => {
         console.log(res.user);
-      })
-      .catch((error) => console.log(error));
-  };
+        toast.success("Registration succeed !", {
+          position: toast.POSITION.BOTTOM_CENTER,
+        });
 
-  const prePath = useLocation();
+        // navigate after login
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        toast.error(error.message, {
+          position: toast.POSITION.BOTTOM_CENTER,
+        });
+      });
+  };
 
   return (
     <div
@@ -79,6 +91,7 @@ const Login = () => {
                   </button>
                 </div>
               </div>
+              <ToastContainer />
             </div>
           </div>
         </div>

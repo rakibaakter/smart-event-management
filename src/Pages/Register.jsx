@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import regiser from "../assets/register.jpg";
 import useAuthInfoHooks from "../Hooks/useAuthInfoHooks";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const { createUserByEmail } = useAuthInfoHooks();
@@ -14,9 +16,15 @@ const Register = () => {
 
     createUserByEmail(email, password)
       .then((res) => {
-        console.log(res.user);
+        toast.success("Registration succeed !", {
+          position: toast.POSITION.BOTTOM_CENTER,
+        });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        toast.error(error.message, {
+          position: toast.POSITION.BOTTOM_CENTER,
+        });
+      });
   };
 
   return (
@@ -80,6 +88,7 @@ const Register = () => {
                       Register
                     </button>
                   </div>
+                  <ToastContainer />
                 </form>
               </div>
             </div>
