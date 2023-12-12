@@ -2,8 +2,8 @@
 
 ## Description
 
-https://corporate-event-manageme-22150.web.app
-Corporate Event Management
+## https://smart-event-management.netlify.app/
+### Corporate Event Management
 
 ## Features
 
